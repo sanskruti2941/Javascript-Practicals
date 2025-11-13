@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Voting System</title>
+  <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Login Section -->
+    <div id="loginSection">
+      <h1>College Voting System</h1>
+      <h3>Sign In / Sign Up</h3>
+
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="prn" placeholder="PRN Number" required>
+      <input type="text" id="semester" placeholder="Semester" required>
+      <input type="text" id="section" placeholder="Section" required>
+      <input type="email" id="email" placeholder="Email ID" required>
+
+      <button onclick="loginUser()">Continue to Vote</button>
+    </div>
+
+    <!-- Voting Section -->
+    <div id="votingSection" class="hidden">
+      <h2>Vote for Your Candidates</h2>
+      <div id="categories"></div>
+      <button onclick="submitVote()">Submit Vote</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultSection" class="hidden">
+      <h2>Live Results</h2>
+      <div id="results"></div>
+      <button onclick="resetVotes()">Reset Votes</button>
+    </div>
+
+  </div>
+
+  <script src="script11.js"></script>
+</body>
+</html>

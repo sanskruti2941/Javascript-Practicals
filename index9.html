@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Planner</title>
+  <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weekly Schedule Planner</h1>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter your task (e.g. Gym, Study)">
+      <select id="daySelect">
+        <option value="">Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+      <button id="addTaskBtn">Add to Schedule</button>
+    </div>
+
+    <table id="scheduleTable">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Planned Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Monday</td><td id="mondayTask">--</td></tr>
+        <tr><td>Tuesday</td><td id="tuesdayTask">--</td></tr>
+        <tr><td>Wednesday</td><td id="wednesdayTask">--</td></tr>
+        <tr><td>Thursday</td><td id="thursdayTask">--</td></tr>
+        <tr><td>Friday</td><td id="fridayTask">--</td></tr>
+        <tr><td>Saturday</td><td id="saturdayTask">--</td></tr>
+        <tr><td>Sunday</td><td id="sundayTask">--</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script9.js"></script>
+</body>
+</html>
